@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Test Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background: #f9f9f9;
+      color: #333;
+    }
+    button {
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test HTML Page</h1>
+  <p>This is a quick test page for verifying HTML, CSS, and JavaScript.</p>
+  <button id="clickButton">Click me</button>
+  <p id="message"></p>
+
+  <script>
+    document.getElementById('clickButton').addEventListener('click', function () {
+      document.getElementById('message').textContent = 'Button clicked! JavaScript is working.';
+    });
+  </script>
+</body>
+</html>
